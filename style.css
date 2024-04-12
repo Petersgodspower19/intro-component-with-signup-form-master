@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Poppins", sans-serif;
+}
+body{
+  background-image: url('bg-intro-mobile.png');
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+}
+.container{
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.sec-1{
+    margin-top: 2rem;
+    color: white;
+}
+.sec-1 h2{
+    margin-bottom: 1rem;
+}
+.sec-1 p{
+    width: 300px;
+    margin: auto;
+}
+.sec-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.purple{
+    background: hsl(248, 32%, 49%);
+    color: white;
+    width: 370px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px gray;
+    font-weight: 200;
+}
+.purple span{
+    font-weight: 700;
+}
+form{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: auto;
+    box-shadow: 3px 3px 3px grey;
+}
+form article{
+    margin: 1rem 0.5rem;
+    position: relative;
+}
+form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.errors{
+    color: hsl(0, 100%, 74%);
+    text-align: end;
+    font-size: 12px;
+    margin-top: 0.2rem;
+    margin-right: 1rem;
+    display: none;
+}
+form #form-btn{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.terms{
+    text-align: center;
+}
+.terms span{
+    color: hsl(0, 100%, 74%);
+}
+form input.error {
+    background-image: url('icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    border-color: hsl(0, 100%, 74%);
+  }  
+
+@media(min-width:768px){
+.container{
+    margin: 6rem auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+     text-align: start;
+     padding: 2rem;
+}
+.sec-1 p{
+    width: 300px;
+    margin-left: -0.5rem;
+}
+}

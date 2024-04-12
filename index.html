@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: white; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <section class="sec-1">
+    <h2>Learn to code by watching others</h2>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </section>
+  <section class="sec-2">
+    <button id="purple" class="purple"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+    <form>
+      <article>
+        <input id="firstname" type="text" placeholder="Firstname"/>
+      <p class="errors" id="error-for-firstname">First Name cannot be empty</p>
+    </article>
+    <article>
+      <input id="lastname" type="text" placeholder="Lastname"/>
+    <p class="errors" id="error-for-lastname">Last Name cannot be empty</p>
+  </article>
+  <article>
+    <input id="email" type="email" placeholder="Email"/>
+  <p class="errors" id="error-for-email">Email cannot be empty</p>
+</article>
+<article>
+  <input id="password" type="password" placeholder="Password"/>
+<p class="errors" id="error-for-password">Password cannot be empty</p>
+</article>
+<button id="form-btn">Claim your free trial</button>,
+<p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </form>  
+  </section>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Godspower</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
